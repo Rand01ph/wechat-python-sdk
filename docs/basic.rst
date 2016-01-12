@@ -178,6 +178,16 @@
         :param list articles: list 对象, 每个元素为一个 dict 对象, key 包含 ``title``, ``description``, ``picurl``, ``url``
         :return: 符合微信服务器要求的 XML 响应数据
 
+    .. py:method:: group_transfer_message()
+
+        将message群发到多客服系统
+
+        运行时检查：是否已调用 :func:`parse_data` 进行解析
+
+        可用公众号类型：认证服务号
+
+        :return: 符合微信服务器要求的 XML 响应数据
+
     .. py:method:: grant_token(override=True)
 
         获取 Access Token
